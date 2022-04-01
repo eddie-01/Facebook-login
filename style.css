@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #3665af;
+    padding: 8px 0;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+.logo h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form-login{
+    float: right;
+}
+
+.form-element{
+    display: inline-block;
+}
+
+.form-element p{
+    color: white;
+    font-size: 15px;
+}
+
+.form-element input[type=email],.form-element input[type=password]{
+    margin-top: 5px;
+    padding: 3px;
+    outline: none;
+}
+
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    background: #215ab2;
+    color: white;
+}
+
+.form-element input[type=submit]:hover{
+    background: #163e79;
+}
+
+section.main{
+    background: linear-gradient(white, #d3d8e8);
+    padding: 40px 0;
+}
+
+.text{
+    font-size: 22px;
+    width: 70%;
+    color: #215ab2;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.img-pessoas{
+    float: left;
+    width: 60%;
+}
+
+.img-pessoas img{
+    max-width: 100%;
+}
+.abrir-conta{
+    width: 40%;
+    float: left;
+}
+
+.abrir-conta h2{
+    color: black;
+    font-size: 35px;
+}
+
+.abrir-conta h3{
+    font-size: 20px;
+    color: rgb(30, 30, 30);
+    margin-top: 10px;
+    font-weight: 599;
+}
+
+form.criar-conta{
+    margin-top: 10px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+    padding: 0 5px;
+}
+
+form.criar-conta input{
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    border: 1px solid #a5dcff;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+} 
+
+form.criar-conta input[type=submit]{
+    height: 40px;
+    background: linear-gradient(#67ae55, #578843);
+    color: white;
+    cursor: pointer;
+    max-width: 200px;
+    font-size: 19px;
+}
+form.criar-conta input[type=submit]:hover{
+    background: linear-gradient(#b7e8ab,#578843);
+}
+
+form .w100 h3{
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+form select.nascimento{
+    float: left;
+    outline: none;
+    margin-top: 5px;
+}
+
+.input-radio{
+    float: left;
+    padding: 10px;
+}
+
+.input-radio h3{ 
+    display: inline-block;
+}
+
+.input-radio input[type=radio]{
+    width: auto;
+    display: inline-block;
+}
+
+section.linguas{
+    padding: 10px 0;
+}
+section.linguas nav ul li{
+    display: inline-block;
+}
+section.linguas nav ul li a{
+    color: #385898;
+    font-size: 14px;
+    padding-right: 10px;
+}
+section.linguas nav ul li a:hover{
+    text-decoration: underline;
+}
+section.linguas nav ul li a.selected{
+    color: #737373;
+    cursor: auto;
+}
+section.linguas nav ul li a.selected:hover{
+    text-decoration: none;
+}
+section.linguas .center{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+section.linguas .center:last-child{
+    border: none;
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .logo,
+    form.form-login{
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    form.form-login{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    form.form-login div.form-element{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    form.form-login div.form-element p{
+        color: white;
+        font-size: 14px;
+    }
+    form.form-login div.form-element input[type=email], 
+    form.form-login div.form-element input[type=password]{
+        margin-top: 5px;
+        border: 0;
+        padding: 5px;
+        outline: none;
+        width: 100%;
+        max-width: 320px;
+    }
+    form.form-login div.form-element input[type=submit]{
+        width: 140px;
+    }
+
+    div.img-pessoas{
+        display: none;
+    }
+
+    div.abrir-conta{
+        width: 100%;
+    }
+}
+
